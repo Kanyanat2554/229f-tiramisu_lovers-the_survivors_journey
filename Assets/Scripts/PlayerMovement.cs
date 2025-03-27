@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 3f;
-    public float rotationSpeed = 500f;
-    public float jumpHeight = 2f;
-    public float gravity = 30f;
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float rotationSpeed = 5f;
+    [SerializeField] private float jumpHeight = 7f;
+    [SerializeField] private float gravity = 30f;
 
     private CharacterController characterController;
     private Vector3 velocity; // Stores vertical velocity
@@ -35,16 +35,20 @@ public class PlayerMovement : MonoBehaviour
         // Calculate the movement direction based on input
         Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput).normalized;
 
+        Transform cameraTransform = Camera.main.transform;
+        Quaternion cameraRotation = Quaternion.Euler(0, cameraTransform.eulerAngles.y, 0);
+        Vector3 moveDirection = cameraRotation * movement;
+
         // If there's any input, rotate the character to face the movement direction
-        if (movement.magnitude >= 0.1f)
+        if (moveDirection.magnitude >= 0.1f)
         {
-            float targetAngle = Mathf.Atan2(movement.x, movement.z) * Mathf.Rad2Deg;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref rotationSpeed, 0.1f);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(0f, targetAngle, 0f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
 
         // Apply movement
-        characterController.Move(movement * speed * Time.deltaTime);
+        characterController.Move(moveDirection * speed * Time.deltaTime);
 
         // Jumping logic
         if (isGrounded && Input.GetButtonDown("Jump"))
