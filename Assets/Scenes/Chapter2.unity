@@ -335,7 +335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337795529860036803, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
       propertyPath: m_Name
-      value: woman
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8337795529860036803, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
       propertyPath: m_IsActive
@@ -413,7 +413,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8337795529860036803, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1023571052}
+    - targetCorrespondingSourceObject: {fileID: 8337795529860036803, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1023571057}
   m_SourcePrefab: {fileID: 100100000, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
+--- !u!95 &992027932 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3323147054920251395, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
+  m_PrefabInstance: {fileID: 992027931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1023571051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8337795529860036803, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
@@ -459,8 +467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  rotationSpeed: 500
-  jumpHeight: 2
+  rotationSpeed: 0.5
+  jumpHeight: 7
   gravity: 30
 --- !u!143 &1023571054
 CharacterController:
@@ -492,6 +500,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8718437227229995641, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
   m_PrefabInstance: {fileID: 992027931}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1023571057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023571051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeec9207fc88d30459eb392b22b70247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookCount: 0
+  anim: {fileID: 992027932}
+  rb: {fileID: 1023571052}
 --- !u!1 &1240670568
 GameObject:
   m_ObjectHideFlags: 0
