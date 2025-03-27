@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovingObject : MonoBehaviour
 {
-    public Vector3 targetPosition = new Vector3(-16.5f, -13.07f, 13.4f);
+    public Vector3 targetPosition = new Vector3(-17.42f, -13.07f, 13.4f);
     public float moveSpeed = 10f;
     private bool shouldMove = false;
 
