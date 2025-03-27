@@ -523,6 +523,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sinkSpeed: 5
   slowMultiplier: 0.2
+--- !u!54 &551562733
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551562723}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &551562734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551562723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 551562733}
+  damageHit: 0
 --- !u!1 &699734358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8337795529860036803, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
@@ -614,6 +655,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookCount: 0
+  anim: {fileID: 699734368}
+  rb: {fileID: 699734365}
+--- !u!95 &699734368 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3323147054920251395, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
+  m_PrefabInstance: {fileID: 1413017897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &767568144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,6 +1520,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2878484898601166450, guid: 49a222b06343c1b478e144dd7d8890a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 551562728}
+    - targetCorrespondingSourceObject: {fileID: 2878484898601166450, guid: 49a222b06343c1b478e144dd7d8890a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 551562734}
+    - targetCorrespondingSourceObject: {fileID: 2878484898601166450, guid: 49a222b06343c1b478e144dd7d8890a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 551562733}
   m_SourcePrefab: {fileID: 100100000, guid: 49a222b06343c1b478e144dd7d8890a6, type: 3}
 --- !u!1001 &1898245610
 PrefabInstance:
