@@ -6,7 +6,7 @@ public class Obstacle : MonoBehaviour
     private PlayerController player;
     public Rigidbody rb;
 
-    [SerializeField] private int damageHit = 10;
+    [SerializeField] private int damageHit;
     public int DamageHit
     {
         get { return damageHit; }
