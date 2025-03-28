@@ -2,13 +2,31 @@ using UnityEngine;
 
 public class Book : MonoBehaviour
 {
+    private static int collectedBooks = 0; 
+
     private void OnTriggerEnter(Collider other)
     {
-        PlayerController player = other.GetComponent<PlayerController>();
-        if (player != null)
+        if (other.CompareTag("Player")) 
         {
-            player.CollectBook();
+            collectedBooks++; 
+            Debug.Log($"Books collected: {collectedBooks}");
+
             Destroy(gameObject); 
+
+            if (collectedBooks >= 2) 
+            {
+                RemoveBarrier(); 
+            }
+        }
+    }
+
+    private void RemoveBarrier()
+    {
+        GameObject barrier = GameObject.FindGameObjectWithTag("Barrier"); 
+        if (barrier != null)
+        {
+            Destroy(barrier); 
+            Debug.Log("Barrier Removed!");
         }
     }
 }
