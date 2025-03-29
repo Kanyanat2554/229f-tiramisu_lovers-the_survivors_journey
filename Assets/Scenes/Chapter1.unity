@@ -1112,7 +1112,6 @@ MonoBehaviour:
   anim: {fileID: 699734368}
   rb: {fileID: 699734365}
   healthBar: {fileID: 104868215}
-  bookText: {fileID: 841415730}
 --- !u!95 &699734368 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3323147054920251395, guid: 437edd5c5b27f8248b3e5c8eaca85987, type: 3}
@@ -2530,6 +2529,7 @@ GameObject:
   - component: {fileID: 1726047675}
   - component: {fileID: 1726047674}
   - component: {fileID: 1726047673}
+  - component: {fileID: 1726047677}
   m_Layer: 5
   m_Name: UI_Book
   m_TagString: Untagged
@@ -2621,6 +2621,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1726047677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726047672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb0e8cec907e544c9d6c6d09cadd5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookText: {fileID: 841415730}
 --- !u!1 &1891167635
 GameObject:
   m_ObjectHideFlags: 0
