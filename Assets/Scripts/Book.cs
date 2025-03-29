@@ -1,8 +1,9 @@
+using TMPro;
 using UnityEngine;
 
 public class Book : MonoBehaviour
 {
-    private static int collectedBooks = 0; 
+    public static int collectedBooks = 0; 
 
     private void OnTriggerEnter(Collider other)
     {

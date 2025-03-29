@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BookChapterThree : MonoBehaviour
 {
-    private static int collectedBooks = 0;
+    public static int collectedBooks = 0;
 
     private void OnTriggerEnter(Collider other)
     {
