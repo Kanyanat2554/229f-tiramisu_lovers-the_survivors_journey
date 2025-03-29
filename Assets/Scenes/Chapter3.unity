@@ -153,7 +153,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -186,7 +186,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &84650885
+--- !u!114 &84650889
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,11 +195,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 84650878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 84650881}
-  damageHit: 0
+  damage: 10
 --- !u!1001 &88237632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -373,7 +372,7 @@ PrefabInstance:
       addedObject: {fileID: 783909770}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 783909776}
+      addedObject: {fileID: 783909780}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1001 &150973055
 PrefabInstance:
@@ -471,7 +470,7 @@ PrefabInstance:
       addedObject: {fileID: 957212824}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 957212830}
+      addedObject: {fileID: 957212834}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1001 &204246928
 PrefabInstance:
@@ -569,7 +568,7 @@ PrefabInstance:
       addedObject: {fileID: 1693451495}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1693451501}
+      addedObject: {fileID: 1693451505}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1001 &231292118
 PrefabInstance:
@@ -667,7 +666,7 @@ PrefabInstance:
       addedObject: {fileID: 1053695630}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1053695634}
+      addedObject: {fileID: 1053695638}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1001 &234015647
 PrefabInstance:
@@ -857,7 +856,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -890,7 +889,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &387064560
+--- !u!114 &387064564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -899,11 +898,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 387064553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 387064556}
-  damageHit: 0
+  damage: 10
 --- !u!1001 &414564284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1000,7 +998,7 @@ PrefabInstance:
       addedObject: {fileID: 84650879}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 84650885}
+      addedObject: {fileID: 84650889}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1001 &465797250
 PrefabInstance:
@@ -1098,7 +1096,7 @@ PrefabInstance:
       addedObject: {fileID: 1784980848}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1784980854}
+      addedObject: {fileID: 1784980858}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1001 &630777210
 PrefabInstance:
@@ -1196,7 +1194,7 @@ PrefabInstance:
       addedObject: {fileID: 387064554}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 387064560}
+      addedObject: {fileID: 387064564}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1001 &692863440
 PrefabInstance:
@@ -1332,7 +1330,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1365,7 +1363,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &695849299
+--- !u!114 &695849303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1374,11 +1372,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 695849292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 695849295}
-  damageHit: 0
+  damage: 10
 --- !u!1 &699657103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,7 +1593,7 @@ PrefabInstance:
       addedObject: {fileID: 1580581399}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1580581405}
+      addedObject: {fileID: 1580581409}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1001 &780914415
 PrefabInstance:
@@ -1694,7 +1691,7 @@ PrefabInstance:
       addedObject: {fileID: 695849293}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 695849299}
+      addedObject: {fileID: 695849303}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1 &783909769 stripped
 GameObject:
@@ -1730,7 +1727,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1763,7 +1760,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &783909776
+--- !u!114 &783909780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1772,11 +1769,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 783909769}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 783909772}
-  damageHit: 0
+  damage: 10
 --- !u!1 &957212823 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
@@ -1811,7 +1807,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1844,7 +1840,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &957212830
+--- !u!114 &957212834
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1853,11 +1849,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 957212823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 957212826}
-  damageHit: 0
+  damage: 10
 --- !u!1 &1053695623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
@@ -1878,7 +1873,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1925,7 +1920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: {x: -5, y: 0, z: -5}
   spin: {x: 0, y: 5, z: 0}
---- !u!114 &1053695634
+--- !u!114 &1053695638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1934,11 +1929,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053695623}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1053695625}
-  damageHit: 0
+  damage: 10
 --- !u!1 &1061845959 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1864898153233454607, guid: 330ccb941fa6927429b6f863e48b7395, type: 3}
@@ -2000,7 +1994,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2033,7 +2027,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1066303724
+--- !u!114 &1066303728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2042,11 +2036,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1066303717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1066303720}
-  damageHit: 0
+  damage: 10
 --- !u!1 &1160085261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,7 +2427,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2467,7 +2460,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1471600019
+--- !u!114 &1471600023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2476,11 +2469,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1471600012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1471600015}
-  damageHit: 0
+  damage: 10
 --- !u!1001 &1484365444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2577,7 +2569,7 @@ PrefabInstance:
       addedObject: {fileID: 1471600013}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1471600019}
+      addedObject: {fileID: 1471600023}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1 &1485064035 stripped
 GameObject:
@@ -2715,7 +2707,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2748,7 +2740,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1580581405
+--- !u!114 &1580581409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2757,11 +2749,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1580581398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1580581401}
-  damageHit: 0
+  damage: 10
 --- !u!1 &1583593379 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
@@ -2796,7 +2787,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2829,7 +2820,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1583593386
+--- !u!114 &1583593390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2838,11 +2829,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1583593379}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1583593382}
-  damageHit: 0
+  damage: 10
 --- !u!1 &1621757274 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 870698442283379655, guid: 330ccb941fa6927429b6f863e48b7395, type: 3}
@@ -3012,7 +3002,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3045,7 +3035,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1649139245
+--- !u!114 &1649139249
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3054,11 +3044,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1649139238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1649139241}
-  damageHit: 0
+  damage: 10
 --- !u!1 &1693451494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
@@ -3093,7 +3082,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3126,7 +3115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1693451501
+--- !u!114 &1693451505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3135,11 +3124,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1693451494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1693451497}
-  damageHit: 0
+  damage: 10
 --- !u!1001 &1722736274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3236,7 +3224,7 @@ PrefabInstance:
       addedObject: {fileID: 1649139239}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1649139245}
+      addedObject: {fileID: 1649139249}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1 &1741925335
 GameObject:
@@ -3658,7 +3646,7 @@ PrefabInstance:
       addedObject: {fileID: 1066303718}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1066303724}
+      addedObject: {fileID: 1066303728}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1 &1784980847 stripped
 GameObject:
@@ -3694,7 +3682,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3727,7 +3715,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1784980854
+--- !u!114 &1784980858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3736,11 +3724,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784980847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282110e52b6820c458f00b167a60d5d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d644232e26b8e438f8d594ebcda739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1784980850}
-  damageHit: 0
+  damage: 10
 --- !u!1001 &2118739594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3837,7 +3824,7 @@ PrefabInstance:
       addedObject: {fileID: 1583593380}
     - targetCorrespondingSourceObject: {fileID: 220701211303955240, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1583593386}
+      addedObject: {fileID: 1583593390}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb2e429d3374b1458a6977a55a133f7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
