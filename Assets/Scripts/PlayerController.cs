@@ -1,8 +1,8 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
     //HP System
     private int currentHp;
     public int CurrentHp { get; protected set; }
@@ -13,38 +13,45 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     public Rigidbody rb;
 
-    public virtual void Init(int newCurrentHealth)
+    private void Awake()
     {
-        CurrentHp = newCurrentHealth;
-        maxHp = CurrentHp;
+        if (!PlayerPrefs.HasKey("PlayerHp"))
+        {
+            PlayerPrefs.SetInt("PlayerHp", 100);
+        }
+
+        // โหลดค่า HP ที่บันทึกไว้
+        CurrentHp = PlayerPrefs.GetInt("PlayerHp");
+        MaxHp = CurrentHp;
 
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
 
-        Debug.Log($"({this} has {CurrentHp} left)");
+        Debug.Log($"({this} has {CurrentHp} HP left)");
     }
     public virtual void TakeDamage(int damage)
     {
         CurrentHp -= damage;
+        PlayerPrefs.SetInt("PlayerHp", CurrentHp);
+        PlayerPrefs.Save();
 
-        IsDead();
+        if (IsDead())
+        {
+            Die();
+        }
 
         Debug.Log($"({this} has {CurrentHp} left");
     }
 
     public bool IsDead()
     {
-        if (CurrentHp <= 0)
-        {
-            Destroy(this.gameObject);
-            return true;
-        }
-        else return false;
+        return CurrentHp <= 0;
     }
 
-    private void Start()
+    private void Die()
     {
-        Init(100);
-        Debug.Log($"({this} has {this.CurrentHp} HP left)");
+        Debug.Log("Player Died!");
+        PlayerPrefs.DeleteKey("PlayerHp"); 
+        SceneManager.LoadScene("GameOver"); 
     }
 }
