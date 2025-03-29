@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     public Animator anim;
     public Rigidbody rb;
+    public HealthBar healthBar;
+    private GameObject healthBarUI;
 
     private void Awake()
     {
@@ -22,10 +24,18 @@ public class PlayerController : MonoBehaviour
 
         // โหลดค่า HP ที่บันทึกไว้
         CurrentHp = PlayerPrefs.GetInt("PlayerHp");
-        MaxHp = CurrentHp;
+        
+        MaxHp = 100;
+        
 
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(MaxHp);
+            healthBar.SetHealth(CurrentHp);
+        }
 
         Debug.Log($"({this} has {CurrentHp} HP left)");
     }
@@ -35,8 +45,14 @@ public class PlayerController : MonoBehaviour
         PlayerPrefs.SetInt("PlayerHp", CurrentHp);
         PlayerPrefs.Save();
 
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(CurrentHp);
+        }
+
         if (IsDead())
         {
+            HideHealthBar();
             Die();
         }
 
@@ -53,5 +69,44 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Player Died!");
         PlayerPrefs.DeleteKey("PlayerHp"); 
         SceneManager.LoadScene("GameOver"); 
+    }
+
+    private void FindHealthBar()
+    {
+        GameObject canvas = GameObject.Find("UI_Canvas"); 
+        if (canvas != null)
+        {
+            healthBar = canvas.GetComponentInChildren<HealthBar>();
+            healthBarUI = canvas; // เก็บค่า UI_Canvas ไว้
+
+            if (healthBar != null)
+            {
+                healthBar.SetMaxHealth(MaxHp);
+                healthBar.SetHealth(CurrentHp);
+            }
+        }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindHealthBar(); // ค้นหา Health Bar ใหม่เมื่อโหลดฉากใหม่
+    }
+
+    private void HideHealthBar()
+    {
+        if (healthBarUI != null)
+        {
+            healthBarUI.SetActive(false); // ซ่อน Health Bar UI
+        }
     }
 }
