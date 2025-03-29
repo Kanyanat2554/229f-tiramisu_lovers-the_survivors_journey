@@ -18,11 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter3.unity
     guid: 94b6fa7f1e54f1d4bb9e259b567afeac
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: 2db013bff0739c24591fed7c66edc7b9
-  - enabled: 1
     path: Assets/Scenes/HowToPlay.unity
     guid: 34a3fae8c7a9c2647bb91b8b5c6077ce
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: 3f590085e2f4e32458d5e79ec8cf6a27
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: f809a4138dcae3946a8f8e985555651d
+  - enabled: 1
+    path: Assets/Scenes/EndCredits.unity
+    guid: 1c5625e8376d29e439c0fc7acff705eb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

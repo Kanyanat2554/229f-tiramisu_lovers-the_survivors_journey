@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Player Died!");
         PlayerPrefs.DeleteKey("PlayerHp"); 
-        SceneManager.LoadScene("GameOver"); 
+        SceneManager.LoadScene("Lose"); 
     }
 
     private void FindHealthBar()
