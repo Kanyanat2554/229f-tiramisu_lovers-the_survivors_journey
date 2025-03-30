@@ -69,7 +69,9 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Player Died!");
         PlayerPrefs.DeleteKey("PlayerHp"); 
-        SceneManager.LoadScene("Lose"); 
+        SceneManager.LoadScene("Lose");
+        Book.collectedBooks = 0;
+        CurrentHp = 0;
     }
 
     private void FindHealthBar()
