@@ -71,7 +71,6 @@ public class PlayerController : MonoBehaviour
         PlayerPrefs.DeleteKey("PlayerHp"); 
         SceneManager.LoadScene("Lose");
         Book.collectedBooks = 0;
-        CurrentHp = 0;
     }
 
     private void FindHealthBar()
